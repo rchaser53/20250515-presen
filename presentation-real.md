@@ -91,5 +91,11 @@ A. 😇
 
 ---
 
+## レポジトリのURL
+- [レシートの金額を足してメールを送るやつ](https://github.com/rchaser53/kakei)
+- [プレゼン資料](https://github.com/rchaser53/20250515-presen)
+
+---
+
 ## ご清聴ありがとうございました
 今度こそおしまいです
