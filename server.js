@@ -8,8 +8,12 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(__dirname));
 
 // ルートパスへのアクセスでindex.htmlを返す
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/fake', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index-fake.html'));
+});
+
+app.get('/real', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index-real.html'));
 });
 
 // サーバー起動
