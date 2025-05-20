@@ -16,6 +16,10 @@ app.get('/real', (req, res) => {
   res.sendFile(path.join(__dirname, 'index-real.html'));
 });
 
+app.get('/other', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index-other.html'));
+});
+
 // サーバー起動
 app.listen(PORT, () => {
   console.log(`プレゼンテーションサーバーが起動しました: http://localhost:${PORT}`);

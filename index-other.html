@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>レシートめんどい</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/github.css">
+  <style>
+    .reveal pre {
+      box-shadow: none;
+    }
+    .reveal pre code {
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .reveal section img {
+      border: none;
+      box-shadow: none;
+      max-height: 500px;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+      text-transform: none;
+    }
+    .reveal .slide-number {
+      font-size: 18px;
+    }
+    .reveal .footer {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      font-size: 0.5em;
+      color: #666;
+    }
+    .architecture-diagram {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .feature-icon {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="presentation-other.md"
+               data-separator="^\n---\n"
+               data-separator-vertical="^\n--\n"
+               data-separator-notes="^Note:"
+               data-charset="utf-8">
+      </section>
+    </div>
+    <div class="footer">2025/5/20 プレゼンテーション</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      transition: 'slide',
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+    });
+  </script>
+</body>
+</html>
